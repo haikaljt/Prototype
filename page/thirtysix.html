@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Thirty-six</title>
+  <link rel="stylesheet" href="page2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="utama">
+  <h1 class="title">The Thirty-six</h1>
+
+  <div class="poto">
+    <img class="poto1" src="img/thethirytysix1.jpg" width="250px" alt="">
+    <img class="poto2" src="img/thethirtysix2.jpg" width="250px" alt="">
+    <img class="poto3" src="img/thethirtysix3.jpg" width="250px" alt="">
+  </div>
+
+  <div class="review">
+    <h3>Description : </h3>
+    <p>
+      Fasilitas : Mostly International food, Indonesian food, live music, live performance. 
+    </p>
+    <p>
+      Range harga : Rp. 15.000 - Rp. 420.000.
+    </p>
+    <p>
+      Alamat : Jl. Multatuli No.36, Hamdan, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20151.
+    </p>
+    <p>
+      Konsep & Suasana : Modern minimalis.
+    </p>
+
+    <p>Contact Person : <a href="https://www.instagram.com/thethirtysix/">Click Me!</a></p>
+
+    <a href="mainpage.html">Kembali ke-halaman sebelumnya</a><br><br><br><br><br>
+    
+    <div class="bawah">
+    <div class="comment-box-container">
+      <div class="comment-box">
+        <h2>Rate and comment!</h2>
+        <form id="commentForm">
+          <label for="comment">Your Comment And Rate:</label>
+          <textarea id="comment" name="comment" placeholder="Type your comment here..." required></textarea>
+          <button type="button" onclick="submitComment()">Submit Comment</button>
+        </form>
+      </div>
+    </div>
+    </div>
+
+
+    <script>
+      function submitComment() {
+        var comment = document.getElementById('comment').value;
+        // You can perform further actions with the comment, like sending it to a server or displaying it on the page.
+        console.log('Comment submitted:', comment);
+        // Clear the textarea after submission if needed
+        document.getElementById('comment').value = '';
+      }
+    </script>
+
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

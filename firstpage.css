@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+img {
+    filter: brightness(50%);
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 3.5;
+  
+}
+.contact {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  bottom: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  line-height: 3.5;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #6B240C;
+  transition: 0.3s ease;
+}
+
+.contact  p {
+  word-spacing: 15px;
+  font-weight: bold;
+}
+
+.contact h5 {
+  font-size: 35px;
+}
+
+.next_button {
+    border: none;
+    background-color: #6B240C;
+    padding: 7px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.next_button:hover {
+  cursor: pointer;
+  transition: all  0.5s;
+  color: #ffffff;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+  }
+
+  img {
+    filter: brightness(50%);
+    display: flex;
+    object-fit: cover;
+    object-position: 60%;  
+}
+}
